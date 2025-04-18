@@ -226,23 +226,23 @@ final loadingProvider = AutoDisposeNotifierProvider<Loading, bool>.internal(
 );
 
 typedef _$Loading = AutoDisposeNotifier<bool>;
-String _$errorStateHash() => r'b3b777ee253467bdb64b3742df902ee775cd673e';
+String _$errorMessageHash() => r'b416eb0a63370319bbc14ee0d66bebaa659c9a0f';
 
-/// See also [ErrorState].
-@ProviderFor(ErrorState)
-final errorStateProvider =
-    AutoDisposeNotifierProvider<ErrorState, String?>.internal(
-      ErrorState.new,
-      name: r'errorStateProvider',
+/// See also [ErrorMessage].
+@ProviderFor(ErrorMessage)
+final errorMessageProvider =
+    AutoDisposeNotifierProvider<ErrorMessage, String?>.internal(
+      ErrorMessage.new,
+      name: r'errorMessageProvider',
       debugGetCreateSourceHash:
           const bool.fromEnvironment('dart.vm.product')
               ? null
-              : _$errorStateHash,
+              : _$errorMessageHash,
       dependencies: null,
       allTransitiveDependencies: null,
     );
 
-typedef _$ErrorState = AutoDisposeNotifier<String?>;
+typedef _$ErrorMessage = AutoDisposeNotifier<String?>;
 String _$isNewNoteHash() => r'97d01aeef03a945be20ce8bd64f82fcf757ee2cf';
 
 /// See also [IsNewNote].

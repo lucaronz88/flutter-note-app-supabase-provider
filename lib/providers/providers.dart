@@ -64,9 +64,9 @@ class Loading extends _$Loading {
   void setLoading(bool value) => state = value;
 }
 
-// Error state provider
+// Error message provider
 @riverpod
-class ErrorState extends _$ErrorState {
+class ErrorMessage extends _$ErrorState {
   @override
   String? build() => null;
 
